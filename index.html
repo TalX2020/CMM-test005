@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -11,37 +10,73 @@
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
+
+<!-- Navbar -->
+<nav class="navbar ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button aria-controls="offcanvasDarkNavbar" class="navbar-toggler"
+                data-bs-target="#offcanvasDarkNavbar" data-bs-toggle="offcanvas" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div aria-labelledby="offcanvasDarkNavbarLabel" class="offcanvas offcanvas-end text-bg-dark"
+             id="offcanvasDarkNavbar" tabindex="-1">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        type="button"></button>
+            </div>
+            <div class="offcanvas-body text-bg-dark">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="leadership.html">Leadership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="evidence.html">Evidence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="partnership.html">Partnership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="resource.html">Resource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="actions.html">Actions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <div class="container text-center">
-    <p class="text-center"><h1>Adaptation Framework</h1></p>
+    <p class="text-center">
+    <h1>Adaptation Framework</h1></p>
     <p class="text-center">Intro Paragraph</p>
 </div>
 
-<div class="container">
+<!-- Interactive Graphic - Medium screen plus -->
+<div class="container d-none d-md-block">
 
-    <!-- Small Screen message -->
-    <div class="d-md-none">Small screen: TODO</div>
-
-    <!-- Medium to large screen message -->
-    <div class="d-none d-md-block">
-        <p class="text-center">Use the Interactive Graphic to explore the framework and start your adaptation journey</p>
-    </div>
+    <p class="text-center">Use the Interactive Graphic to explore the framework and start your adaptation journey</p>
 
     <!-- Interactive Graphic for md screen (696 pixel image) -->
     <div class="d-none d-md-block d-lg-none">
-        <img alt="hero image" class="img-fluid" id="hero_image_md"
-             src="hero_image.jpg" usemap="#hero_image_map_md">
+        <img alt="hero image" class="img-fluid" id="hero_image_md" src="images/hero_image.jpg" usemap="#hero_image_map_md">
         <map name="hero_image_map_md">
-            <area alt="Action L1A" coords="33,160,11" href="leadership.html#action-L1A.htm" shape="circle" title="L1A">
-            <area alt="Action L1B" coords="25,131,11" href="leadership.html#action-L1B.htm" shape="circle" title="L1B">
-            <area alt="Action L1C" coords="54,125,11" href="leadership.html#action-L1C.htm" shape="circle" title="L1C">
-            <area alt="Action L2A" coords="80,93,13" href="leadership.html#action-L2A.htm" shape="circle" title="L2A">
-            <area alt="Action L2B" coords="101,66,13" href="leadership.html#action-L2B.htm" shape="circle" title="L2B">
-            <area alt="Action L2C" coords="128,87,13" href="leadership.html#action-L2C.htm" shape="circle" title="L2C">
-            <area alt="Action L3A" coords="152,55,15" href="leadership.html#action-L3A.htm" shape="circle" title="L3A">
-            <area alt="Action L3B" coords="186,38,15" href="leadership.html#action-L3B.htm" shape="circle" title="L3B">
-            <area alt="Action L3C" coords="203,70,15" href="leadership.html#action-L3C.htm" shape="circle" title="L3C">
+            <area alt="Action L1A" coords="33,160,11" href="leadership.html#action-L1A" shape="circle" title="L1A">
+            <area alt="Action L1B" coords="25,131,11" href="leadership.html#action-L1B" shape="circle" title="L1B">
+            <area alt="Action L1C" coords="54,125,11" href="leadership.html#action-L1C" shape="circle" title="L1C">
+            <area alt="Action L2A" coords="80,93,13" href="leadership.html#action-L2A" shape="circle" title="L2A">
+            <area alt="Action L2B" coords="101,66,13" href="leadership.html#action-L2B" shape="circle" title="L2B">
+            <area alt="Action L2C" coords="128,87,13" href="leadership.html#action-L2C" shape="circle" title="L2C">
+            <area alt="Action L3A" coords="152,55,15" href="leadership.html#action-L3A" shape="circle" title="L3A">
+            <area alt="Action L3B" coords="186,38,15" href="leadership.html#action-L3B" shape="circle" title="L3B">
+            <area alt="Action L3C" coords="203,70,15" href="leadership.html#action-L3C" shape="circle" title="L3C">
             <area alt="Action L1C" coords="158,233, 139,229, 127,222, 115,209, 109,193, 92,184, 64,178,
                           68,161, 78,145, 90,134, 104,127, 116,124, 125,123, 137,120, 148,120, 159,122,
                           181,132, 191,141, 200,153, 204,162, 208,180, 205,202, 197,215, 185,225, 172,231"
@@ -52,18 +87,17 @@
 
     <!-- Interactive Graphic for lg screen (936 pixel image) -->
     <div class="d-none d-lg-block d-xl-none">
-        <img alt="hero image" class="img-fluid" id="hero_image_lg"
-             src="hero_image.jpg" usemap="#hero_image_map_lg">
+        <img alt="hero image" class="img-fluid" id="hero_image_lg" src="images/hero_image.jpg" usemap="#hero_image_map_lg">
         <map name="hero_image_map_lg">
-            <area alt="Action L1A" coords="44,214,14" href="leadership.html#action-L1A.htm" shape="circle" title="L1A">
-            <area alt="Action L1B" coords="33,177,14" href="leadership.html#action-L1B.htm" shape="circle" title="L1B">
-            <area alt="Action L1C" coords="72,168,14" href="leadership.html#action-L1C.htm" shape="circle" title="L1C">
-            <area alt="Action L2A" coords="108,124,17" href="leadership.html#action-L2A.htm" shape="circle" title="L2A">
-            <area alt="Action L2B" coords="136,89,17" href="leadership.html#action-L2B.htm" shape="circle" title="L2B">
-            <area alt="Action L2C" coords="172,117,17" href="leadership.html#action-L2C.htm" shape="circle" title="L2C">
-            <area alt="Action L3A" coords="205,73,20" href="leadership.html#action-L3A.htm" shape="circle" title="L3A">
-            <area alt="Action L3B" coords="250,51,20" href="leadership.html#action-L3B.htm" shape="circle" title="L3B">
-            <area alt="Action L3C" coords="274,94,20" href="leadership.html#action-L3C.htm" shape="circle" title="L3C">
+            <area alt="Action L1A" coords="44,214,14" href="leadership.html#action-L1A" shape="circle" title="L1A">
+            <area alt="Action L1B" coords="33,177,14" href="leadership.html#action-L1B" shape="circle" title="L1B">
+            <area alt="Action L1C" coords="72,168,14" href="leadership.html#action-L1C" shape="circle" title="L1C">
+            <area alt="Action L2A" coords="108,124,17" href="leadership.html#action-L2A" shape="circle" title="L2A">
+            <area alt="Action L2B" coords="136,89,17" href="leadership.html#action-L2B" shape="circle" title="L2B">
+            <area alt="Action L2C" coords="172,117,17" href="leadership.html#action-L2C" shape="circle" title="L2C">
+            <area alt="Action L3A" coords="205,73,20" href="leadership.html#action-L3A" shape="circle" title="L3A">
+            <area alt="Action L3B" coords="250,51,20" href="leadership.html#action-L3B" shape="circle" title="L3B">
+            <area alt="Action L3C" coords="274,94,20" href="leadership.html#action-L3C" shape="circle" title="L3C">
             <area alt="Action L1C" coords="213,313, 188,308, 170,299, 155,281, 147,260, 123,247, 87,240,
                           92,216, 105,195, 121,181, 141,170, 157,166, 168,165, 185,162, 199,161, 214,164,
                           244,177, 258,189, 269,205, 274,218, 280,242, 275,272, 265,289, 249,302, 231,310"
@@ -74,18 +108,17 @@
 
     <!-- Interactive Graphic for xl screen (1116 pixel image) -->
     <div class="d-none d-xl-block d-xxl-none">
-        <img alt="hero image" class="img-fluid" id="hero_image_xl"
-             src="hero_image.jpg" usemap="#hero_image_map_xl">
+        <img alt="hero image" class="img-fluid" id="hero_image_xl" src="images/hero_image.jpg" usemap="#hero_image_map_xl">
         <map name="hero_image_map_xl">
-            <area alt="Action L1A" coords="53,256,17" href="leadership.html#action-L1A.htm" shape="circle" title="L1A">
-            <area alt="Action L1B" coords="40,211,17" href="leadership.html#action-L1B.htm" shape="circle" title="L1B">
-            <area alt="Action L1C" coords="86,201,17" href="leadership.html#action-L1C.htm" shape="circle" title="L1C">
-            <area alt="Action L2A" coords="130,148,20" href="leadership.html#action-L2A.htm" shape="circle" title="L2A">
-            <area alt="Action L2B" coords="162,106,20" href="leadership.html#action-L2B.htm" shape="circle" title="L2B">
-            <area alt="Action L2C" coords="205,140,20" href="leadership.html#action-L2C.htm" shape="circle" title="L2C">
-            <area alt="Action L3A" coords="244,87,23" href="leadership.html#action-L3A.htm" shape="circle" title="L3A">
-            <area alt="Action L3B" coords="299,61,23" href="leadership.html#action-L3B.htm" shape="circle" title="L3B">
-            <area alt="Action L3C" coords="326,113,23" href="leadership.html#action-L3C.htm" shape="circle" title="L3C">
+            <area alt="Action L1A" coords="53,256,17" href="leadership.html#action-L1A" shape="circle" title="L1A">
+            <area alt="Action L1B" coords="40,211,17" href="leadership.html#action-L1B" shape="circle" title="L1B">
+            <area alt="Action L1C" coords="86,201,17" href="leadership.html#action-L1C" shape="circle" title="L1C">
+            <area alt="Action L2A" coords="130,148,20" href="leadership.html#action-L2A" shape="circle" title="L2A">
+            <area alt="Action L2B" coords="162,106,20" href="leadership.html#action-L2B" shape="circle" title="L2B">
+            <area alt="Action L2C" coords="205,140,20" href="leadership.html#action-L2C" shape="circle" title="L2C">
+            <area alt="Action L3A" coords="244,87,23" href="leadership.html#action-L3A" shape="circle" title="L3A">
+            <area alt="Action L3B" coords="299,61,23" href="leadership.html#action-L3B" shape="circle" title="L3B">
+            <area alt="Action L3C" coords="326,113,23" href="leadership.html#action-L3C" shape="circle" title="L3C">
             <area alt="Action L1C" coords="254,374, 224,368, 203,357, 185,335, 175,310, 147,295, 103,286,
                           109,259, 125,133, 144,215, 168,203, 187,198, 201,197, 220,193, 238,192, 256,196,
                           291,211, 308,226, 320,245, 327,260, 334,289, 328,325, 316,345, 297,361, 278,370"
@@ -96,28 +129,94 @@
 
     <!-- Interactive Graphic for xxl screen (1296 pixel image) -->
     <div class="d-none d-xxl-block">
-        <img alt="hero image" class="img-fluid" id="hero_image_xxl"
-             src="hero_image.jpg" usemap="#hero_image_map_xxl">
+        <img alt="hero image" class="img-fluid" id="hero_image_xxl" src="images/hero_image.jpg" usemap="#hero_image_map_xxl">
         <map name="hero_image_map_xxl">
             <!-- Leadership -->
-            <area alt="Action L1A" coords="61,297,20" href="leadership.html#action-L1A.htm" shape="circle" title="L1A">
-            <area alt="Action L1B" coords="46,245,20" href="leadership.html#action-L1B.htm" shape="circle" title="L1B">
-            <area alt="Action L1C" coords="100,233,20" href="leadership.html#action-L1C.htm" shape="circle" title="L1C">
-            <area alt="Action L2A" coords="150,172,23" href="leadership.html#action-L2A.htm" shape="circle" title="L2A">
-            <area alt="Action L2B" coords="188,122,23" href="leadership.html#action-L2B.htm" shape="circle" title="L2B">
-            <area alt="Action L2C" coords="238,162,23" href="leadership.html#action-L2C.htm" shape="circle" title="L2C">
-            <area alt="Action L3A" coords="284,102,27" href="leadership.html#action-L3A.htm" shape="circle" title="L3A">
-            <area alt="Action L3B" coords="347,71,27" href="leadership.html#action-L3B.htm" shape="circle" title="L3B">
-            <area alt="Action L3C" coords="379,130,27" href="leadership.html#action-L3C.htm" shape="circle" title="L3C">
+            <area alt="Action L1A" coords="61,297,20" href="leadership.html#stage-l1a" shape="circle" title="L1A">
+            <area alt="Action L1B" coords="46,245,20" href="leadership.html#stage-l1b" shape="circle" title="L1B">
+            <area alt="Action L1C" coords="100,233,20" href="leadership.html#stage-l1c" shape="circle" title="L1C">
+            <area alt="Action L2A" coords="150,172,23" href="leadership.html#stage-l2a" shape="circle" title="L2A">
+            <area alt="Action L2B" coords="188,122,23" href="leadership.html#stage-l2b" shape="circle" title="L2B">
+            <area alt="Action L2C" coords="238,162,23" href="leadership.html#stage-l2c" shape="circle" title="L2C">
+            <area alt="Action L3A" coords="284,102,27" href="leadership.html#stage-l3a" shape="circle" title="L3A">
+            <area alt="Action L3B" coords="347,71,27" href="leadership.html#stage-l3b" shape="circle" title="L3B">
+            <area alt="Action L3C" coords="379,130,27" href="leadership.html#stage-l3c" shape="circle" title="L3C">
             <area alt="Action L1C" coords="295,434, 260,427, 236,414, 215,389, 203,360, 171,342, 120,332, 127,300,
                                            145,270, 167,250, 195,236, 217,230, 233,229, 256,224, 276,223, 297,227,
                                            338,245, 357,262, 372,284, 381,302, 388,335, 381,377, 367,400, 345,419,
                                            320,430"
-                  href="leadership.html" shape="poly" title="Leadership">
+                  href="leadership.html" shape="poly" title="Leadership"
+                  data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
         </map>
     </div>
-
 </div>
-</body>
 
+<div class="container text-center">
+
+    <!-- Small screens -->
+    <div class="d-md-none">
+        <div class="row row-cols-2">
+            <div class="col">
+                <a href="leadership.html">
+                    <img alt="Leadership" class="img-fluid" id="leadership"
+                         src="images/leadership.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="evidence.html">
+                    <img alt="Evidence" class="img-fluid" id="evidence"
+                         src="images/evidence.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="partnership.html">
+                    <img alt="Partnership" class="img-fluid" id="partnership"
+                         src="images/partnership.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="resource.html">
+                    <img alt="Resource" class="img-fluid" id="resource"
+                         src="images/resource.png">
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5"></div>
+    </div>
+
+    <!-- Medium screens plus -->
+    <div class="d-none d-md-block">
+        <div class="row mt-5"></div>
+        <p class="text-center font-weight-bold">Meet our champions</p>
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col">
+                <a href="leadership.html">
+                    <img alt="Leadership" class="img-fluid" id="leadership_with_info"
+                         src="images/grace_info.jpg">
+                </a>
+            </div>
+            <div class="col">
+                <a href="partnership.html">
+                    <img alt="Partnership" class="img-fluid" id="partnership_with_info"
+                         src="images/patrick_info.jpg">
+                </a>
+            </div>
+            <div class="col">
+                <a href="evidence.html">
+                    <img alt="Evidence" class="img-fluid" id="evidence_with_info"
+                         src="images/annnie_info.jpg">
+                </a>
+            </div>
+            <div class="col">
+                <a href="resource.html">
+                    <img alt="Resource" class="img-fluid" id="resource_with_info"
+                         src="images/tessa_info.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5"></div>
+    </div>
+</div>
+
+</body>
 </html>
